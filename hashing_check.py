@@ -56,7 +56,7 @@ class ColoredFormatter(Formatter):
         clr = mapping.get(record.levelname, 'white')
         return colored(record.levelname, clr) + ': ' + message
 
-log = logging.getLogger("Kafka-consumer")
+log = logging.getLogger("HashingCheck")
 log.setLevel(logging.INFO)
 handler = StreamHandler()
 formatter = ColoredFormatter()
